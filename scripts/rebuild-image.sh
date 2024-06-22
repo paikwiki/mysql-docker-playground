@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE_NAME="mysql-alpine"
+IMAGE_NAME="mysql-image"
 TAG="latest"
 
 # Find all image IDs with the specified name and tag

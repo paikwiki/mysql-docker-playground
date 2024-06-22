@@ -1,9 +1,9 @@
 FROM mysql:8.0
 
-ENV MYSQL_ROOT_PASSWORD=mysqlrootpassword
+ENV MYSQL_ROOT_PASSWORD=rootP@ssWord42$
 ENV MYSQL_DATABASE=mysqldatabase
 ENV MYSQL_USER=mysqluser
-ENV MYSQL_PASSWORD=mysqlpassword
+ENV MYSQL_PASSWORD=P@ssWord42$
 
 COPY srcs/my.cnf /etc/mysql/my.cnf
 COPY srcs/init.sql /docker-entrypoint-initdb.d/

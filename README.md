@@ -3,14 +3,24 @@
 ### 빌드 & 실행
 
 ```sh
-$ docker build -t mysql-alpine .
-$ docker run -d -p 3306:3306 --name mysql-container mysql-alpine
+$ docker build -t mysql-image .
+$ docker run -d -p 3306:3306 --name mysql-container mysql-image
 ```
 
 ### 컨테이너 쉘 접속
 
 ```sh
 docker exec -it mysql-container sh
+```
+
+
+### 스크립트로 실행하기
+
+```
+$. ./script/rebuild-image.sh  # 기존 이미지를 삭제 후 다시 빌드
+$. ./script/run-container.sh  # 컨테이너 실행
+$. ./script/sh-container.sh   # 컨테이너 쉛 접속
+$. ./script/rm-container.sh   # 컨테이너 종료 후 삭제
 ```
 
 ### 환경 세팅 메모
